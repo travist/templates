@@ -228,7 +228,7 @@
                                   <table cellspacing="0" cellpadding="0" class="card">
                                     <tr>
                                       <td style="background-color:green; text-align:center; padding:10px; color:white; ">
-                                       {{ data. subscription }} Monthly Plan
+                                       {{ data. subscription }} Plan
                                       </td>
                                     </tr>
                                     <tr>
@@ -250,9 +250,26 @@
                                                     Amount
                                                   </td>
                                                   <td class="data-value">
-                                                   {{ data.transactionAmount }} $39.99
+                                                   ${{ data.transactionAmount }} 
                                                   </td>
                                                 </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Cardholder Name
+                                                  </td>
+                                                  <td class="data-value">
+                                                   ${{ data.cardHolderName }} 
+                                                  </td>
+                                                </tr>                                                
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Charged to Card:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   ${{ data.chargedtoCard }} 
+                                                  </td>
+                                                </tr>                                                
+                                              
                                               </table>
                                             </td>
                                           </tr>
