@@ -215,7 +215,7 @@
                         <tr>
                           <td valign="top" style="padding-bottom:20px; background-color:#ffffff;">
                             Hi {{ data.username }},<br><br>
-                            Your credit card ending in 1234 has been charged.<br>
+                            Your credit card ending in {{ data.chargedtoCard }}  has been charged.<br>
                             To view account details <a href="#">click here.</a>
                           </td>
                         </tr>
@@ -255,18 +255,18 @@
                                                 </tr>
                                                 <tr>
                                                   <td width="150" class="data-heading">
-                                                    Cardholder Name
+                                                    Cardholder
                                                   </td>
                                                   <td class="data-value">
-                                                   ${{ data.cardHolderName }} 
+                                                   {{ data.cardHolderName }} 
                                                   </td>
                                                 </tr>                                                
                                                 <tr>
                                                   <td width="150" class="data-heading">
-                                                    Charged to Card:
+                                                    Charged to:
                                                   </td>
                                                   <td class="data-value">
-                                                   ${{ data.chargedtoCard }} 
+                                                   {{ data.chargedtoCard }} 
                                                   </td>
                                                 </tr>                                                
                                               
