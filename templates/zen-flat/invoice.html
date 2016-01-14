@@ -216,7 +216,7 @@
                           <td valign="top" style="padding-bottom:20px; background-color:#ffffff;">
                             Hi {{ data.username }},<br><br>
                             Thank you for your business!<br>
-                            Your credit card ending in {{ data.chargedtoCard }}  has been charged.<br>
+                            Below is a summmary or your charges for the period.<br>
                           </td>
                         </tr>
                         <tr>
@@ -228,7 +228,7 @@
                                   <table cellspacing="0" cellpadding="0" class="card">
                                     <tr>
                                       <td style="background-color:green; text-align:center; padding:10px; color:white; ">
-                                       {{ data. subscription }} Plan
+                                      Summary of Plans and Charges
                                       </td>
                                     </tr>
                                     <tr>
@@ -243,6 +243,14 @@
                                                   </td>
                                                   <td class="data-value">
                                                     {{ data.period }}
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="200" class="data-heading">
+                                                    Subcription Level:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    {{ data.subscription }}
                                                   </td>
                                                 </tr>
                                                 <tr>
@@ -311,6 +319,14 @@
                                                 </tr> 
                                                <tr>
                                                   <td width="200" class="data-heading">
+                                                    Transaction ID:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   {{ data.transactionID }} 
+                                                  </td>
+                                                </tr>    
+                                               <tr>
+                                                  <td width="200" class="data-heading">
                                                     Receipt #:
                                                   </td>
                                                   <td class="data-value">
@@ -332,7 +348,7 @@
                         </tr>
                         <tr>
                           <td style="padding-top:20px;background-color:#ffffff;">
-                            Please let Denise know if you have ANY questions, but don't ever call Gary!<br>
+                            Please let us know if you have any questions, but don't ever call Gary!<br><br>
                             Your Form.io team
                           </td>
                         </tr>
